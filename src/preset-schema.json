@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "name": "Bright Lead - user123",
+    "author": "user123",
+    "created_at": "2026-06-05T12:00:00Z",
+    "source": "imported-from-FL",
+    "tags": ["lead", "synth", "bright"]
+  },
+  "instrument": {
+    "type": "sampler",
+    "sample": null,
+    "synth": {
+      "oscillators": [
+        { "type": "saw", "detune": 0, "level": 0.9 },
+        { "type": "square", "detune": -8, "level": 0.4 }
+      ],
+      "filter": { "type": "lowpass", "cutoff": 1200, "q": 0.8, "env_amount": 0.5 },
+      "amp_env": { "attack": 0.01, "decay": 0.2, "sustain": 0.8, "release": 0.25 }
+    }
+  },
+  "effects_chain": [
+    { "id": "eq1", "type": "parametricEQ", "bands": [{ "freq": 1000, "gain": 2, "q": 1 }] },
+    { "id": "comp1", "type": "compressor", "threshold": -12, "ratio": 3, "attack": 0.01, "release": 0.2 },
+    { "id": "delay1", "type": "delay", "time": 0.35, "feedback": 0.25, "mix": 0.15 }
+  ],
+  "routing": { "outs": ["master"] },
+  "ui": { "knobPositions": { "filter.cutoff": 1200 } }
+}
