@@ -1,0 +1,4 @@
+.engine-page .engine-hero { padding: 12px; background: linear-gradient(180deg,#071021,#081426); border-radius:12px; margin-bottom:12px }
+.engine-page .engine-actions { display:flex; gap:8px; margin-top:8px; flex-wrap:wrap }
+.engine-page .readme { white-space:pre-wrap; background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; color:#cfeff0; max-height:360px; overflow:auto; font-family:ui-monospace, monospace; font-size:13px }
+.engine-page .small { color:#9ca3af }
